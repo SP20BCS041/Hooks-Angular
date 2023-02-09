@@ -32,6 +32,8 @@ export class DemoComponent
     // console.log(this.data);
   }
 
+  //Whenever we pass the data from parent to child using @Input() ngOnChanges get caled
+  //And whenever there's is change in @Input property it will get called
   //ngOnChanges() is the only hook which takes argument and this hook is called when an input binding value changes..
   //If no change occur it won't get called
   ngOnChanges(changes: SimpleChanges): void {
