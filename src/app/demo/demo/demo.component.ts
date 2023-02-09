@@ -36,6 +36,7 @@ export class DemoComponent
   //And whenever there's is change in @Input property it will get called
   //ngOnChanges() is the only hook which takes argument and this hook is called when an input binding value changes..
   //If no change occur it won't get called
+  //ngOnChange not able to find the change in existing refrence of an object
   ngOnChanges(changes: SimpleChanges): void {
     console.log('ngOnChanges Called');
     console.log(changes);
